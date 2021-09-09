@@ -21,3 +21,5 @@ Source pour [mkdocs-material](https://squidfunk.github.io/mkdocs-material/)
 - Toto ;
 - Titi ;
 - Tata...
+
+CECI EST UN RAJOUT DE LA PART DE HUGO
