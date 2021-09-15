@@ -20,7 +20,7 @@ docs_dir: docs
 nav: 
     - La page d'accueil : index.md
     - Un notebook jupyter : Notebook.ipynb
-    - ASCII : ASCII_UTF8-Le_BN_pour_coder_les_caracteres.ipynb
+    - ASCII : ASCII.ipynb
     - CSV-2 : Data_CSV-2.ipynb
     
 
