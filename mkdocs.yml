@@ -21,6 +21,8 @@ nav:
     - La page d'accueil : index.md
     - Un notebook jupyter : Notebook.ipynb
     - ASCII : ASCII.ipynb
+    - Chaines de caractère : Chaine-Le_BN_pour_traiter_les_textes_en_machines.ipynb
+    - BBC Microbit : BBCmicrobit-Un_BN_Pour_MicroPython.ipynb
     - CSV-2 : Data_CSV-2.ipynb
     
 
