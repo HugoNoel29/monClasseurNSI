@@ -23,5 +23,14 @@ for i in range(3) :
     avancer(-distance/4)
     tourner(-distance/2)
     print(detection())
-    print(distance)
 
+
+
+j = 0
+while j < 20 :
+    if obsatcle(300) == Flase :
+        avancer(250)
+        j += 1
+    else :
+        tourner(45)
+        j += 1
