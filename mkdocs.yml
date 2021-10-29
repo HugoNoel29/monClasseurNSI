@@ -1,10 +1,10 @@
 # Fichier de configuration du site à personnaliser
 
 # Informations du site 
-site_name: Base pour MkDocs
-site_description: Exemple de site de base pour MkDocs à personaliser
-site_author: "Eric MADEC" 
-copyright: Document partagé par <a href="https://github.com/ericECmorlaix" target="_blank">Eric MADEC</a> &copy; 2021 sous licence <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.fr" target="_blank">CC BY-NC-SA 4.0</a>
+site_name: NSI : Hugo Noel
+site_description: Récapitulatif travaux 1ère et Term en NSI
+site_author: "Hugo Noel" 
+copyright: Document partagé par <a href="https://github.com/HugoNoel29" target="_blank">Eric MADEC</a> &copy; 2021 sous licence <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.fr" target="_blank">CC BY-NC-SA 4.0</a>
 site_url: https://hugonoel29.github.io/monClasseurNSI/ #  modifier au format https://votrePseudoGitHub.github.io/votreDepot/
 
 # Dépot du projet 
