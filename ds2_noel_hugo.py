@@ -1,3 +1,5 @@
+#METHODE POO
+
 #CLASSE PILE
 
 class Pile:
@@ -88,3 +90,27 @@ def creation_tours(n):
 tours = creation_tours(5)
 print(tours)
 
+
+
+
+
+
+
+# AUTRE METHODE 
+
+def creer_pile():
+    '''Renvoie une pile vide'''
+    return []
+
+def est_vide(pile):
+    '''Renvoie un booléen, True si la pile est vide et False sinon'''
+    return p == []
+
+def empiler(pile, element):
+    '''Empile element au sommet de pile'''
+    pile.append(element)
+    
+def depiler(pile):
+    '''Renvoie et enlève la valeur du sommet de pile'''
+    assert not est_vide(pile), "Pile vide"
+    return pile.pop()
