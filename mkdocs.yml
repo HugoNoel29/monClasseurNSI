@@ -14,7 +14,7 @@ edit_uri: tree/main/docs/
 
 
 # Structure des dossiers :
-docs_dir: docs
+docs_dir: main
 
 # Menu de navigation
 nav: 
