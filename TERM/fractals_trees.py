@@ -3,8 +3,6 @@ from ipycanvas import Canvas
 from IPython.display import display
 from math import pi
 
-
-
 # Définitions
 
 # Création du canvas c
@@ -23,9 +21,7 @@ def background(couleur : str = 'black') :
     c.fill_rect(0, 0, c.width, c.height)
     
     
-    
-    
-# Une fonction pour dessiner une branche
+        
 def branche(longueur : float) :
     '''
     dessine un trait de la longueur passée en paramètre
@@ -33,17 +29,29 @@ def branche(longueur : float) :
     Préconditions :
     - longueur (float) : un flottant représentant la longueur de la branche    
     '''
-    
-    c.line_width = 3
-    c.stroke_style = 'red'
 
-    c.stroke_line(0, 0, 0, -longueur)
-    c.translate(0, -longueur)
+
+    if longueur > 10 :
+        
+        c.stroke_line(0, 0, 0, -longueur) #Tronc
+        c.translate(0, -longueur)         #Tronc
+
+        c.save()
+        c.rotate(pi/4)
+        branche(longueur*0.75) # Branche de droite
+        c.restore()
+
+        c.save()
+        c.rotate(-pi/4)
+        branche(longueur*0.75) # Branche de gauche
+        c.restore()
+        
     
-    
+        
     
 # Tests
 if __name__ == '__main__':
+    # Affichage du canvas avec un fond
     display(c)
     background()
     
@@ -56,15 +64,5 @@ if __name__ == '__main__':
     c.line_width = 3
     c.stroke_style = 'red'
     
-    branche(150) # Tronc
-
-    c.save()
-    c.rotate(pi/4)
-    branche(150*0.75) # Branche de droite
-    c.restore()
-
-    c.save()
-    c.rotate(-pi/4)
-    branche(150*0.75) # Branche de gauche
-    c.restore()
+    branche(150) # Arbre
     
