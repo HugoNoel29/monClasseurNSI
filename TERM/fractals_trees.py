@@ -1,5 +1,5 @@
 # Dépendances
-from ipycanvas import Canvas
+from ipycanvas import Canvas, hold_canvas
 from IPython.display import display
 from math import pi
 
@@ -31,18 +31,18 @@ def branche(longueur : float) :
     '''
 
 
-    if longueur > 10 :
+    if longueur > 5 :
         
         c.stroke_line(0, 0, 0, -longueur) #Tronc
         c.translate(0, -longueur)         #Tronc
 
         c.save()
-        c.rotate(pi/4)
+        c.rotate(pi/10)
         branche(longueur*0.75) # Branche de droite
         c.restore()
 
         c.save()
-        c.rotate(-pi/4)
+        c.rotate(-pi/5)
         branche(longueur*0.75) # Branche de gauche
         c.restore()
         
@@ -63,6 +63,7 @@ if __name__ == '__main__':
         
     c.line_width = 3
     c.stroke_style = 'red'
+
+    with hold_canvas(c) :
     
-    branche(150) # Arbre
-    
+        branche(140) # Arbre
