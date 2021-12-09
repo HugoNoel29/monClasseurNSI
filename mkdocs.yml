@@ -4,7 +4,7 @@
 site_name: NSI : Hugo Noel
 site_description: Récapitulatif travaux 1ère et Term en NSI
 site_author: "Hugo Noel" 
-copyright: Document partagé par <a href="https://github.com/HugoNoel29" target="_blank">Eric MADEC</a> &copy; 2021 sous licence <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.fr" target="_blank">CC BY-NC-SA 4.0</a>
+copyright: Document partagé par <a href="https://github.com/HugoNoel29" target="_blank">Hugo Noel</a> &copy; 2021 sous licence <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.fr" target="_blank">CC BY-NC-SA 4.0</a>
 site_url: https://hugonoel29.github.io/monClasseurNSI/ #  modifier au format https://votrePseudoGitHub.github.io/votreDepot/
 
 # Dépot du projet 
@@ -14,7 +14,7 @@ edit_uri: tree/main/docs/
 
 
 # Structure des dossiers :
-docs_dir: docs
+docs_dir: main
 
 # Menu de navigation
 nav: 
@@ -107,7 +107,7 @@ plugins:
 extra:
   social: # A personaliser...
     - icon: fontawesome/solid/paper-plane
-      link: mailto:eric.madec@ecmorlaix.fr
+      link: mailto: hugo.noel@eleves.ecmorlaix.fr
       name: Pour toute question, suggestion ou commentaire, écrire à l'auteur
     - icon: fontawesome/brands/github
       link: https://github.com/ericECmorlaix/mkdocs_boilerplate
