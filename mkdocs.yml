@@ -8,8 +8,8 @@ copyright: Document partagé par <a href="https://github.com/HugoNoel29" target=
 site_url: https://hugonoel29.github.io/monClasseurNSI/ #  modifier au format https://votrePseudoGitHub.github.io/votreDepot/
 
 # Dépot du projet 
-repo_name: 'mkdocs_boilerplate' 
-repo_url: https://github.com/ericECmorlaix/mkdocs_boilerplate # Ajoute l'icone et le lien vers le dépot GitHub en haut à droite
+repo_name: 'monClasseurNSI' 
+repo_url: https://github.com/HugoNoel29/monClasseurNSI # Ajoute l'icone et le lien vers le dépot GitHub en haut à droite 
 edit_uri: tree/main/docs/
 
 
