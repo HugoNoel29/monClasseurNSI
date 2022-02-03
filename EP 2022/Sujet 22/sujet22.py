@@ -17,7 +17,7 @@ def reverse(chaine : str) -> str :
 def reverse_slice(chaine : str) -> str :
     """
     Prend une chaine de caractères et en renvoie l'inverse
-    Exemple : >>> reverse("informatique")
+    Exemple : >>> reverse_slice("informatique")
               >>> "euqitamrofni"
     """
     assert type(chaine) == str, "Le paramètre en entrée doit être une chaine de carctères"
@@ -28,7 +28,7 @@ def reverse_slice(chaine : str) -> str :
 def autre_reverse(chaine : str) -> str :
     """
     Prend une chaine de caractères et en renvoie l'inverse
-    Exemple : >>> reverse("informatique")
+    Exemple : >>> autre_reverse("informatique")
               >>> "euqitamrofni"
     """
     assert type(chaine) == str, "Le paramètre en entrée doit être une chaine de carctères"
@@ -39,10 +39,10 @@ def autre_reverse(chaine : str) -> str :
     return inverse
 
 
-def reverse_recursif(chaine : str) -> str :
+def reverse_recursif_slice(chaine : str) -> str :
     """
     Prend une chaine de caractères et en renvoie l'inverse
-    Exemple : >>> reverse("informatique")
+    Exemple : >>> reverse_recursif_slice("informatique")
               >>> "euqitamrofni"
     """
     assert type(chaine) == str, "Le paramètre en entrée doit être une chaine de carctères"
@@ -50,7 +50,7 @@ def reverse_recursif(chaine : str) -> str :
     if len(chaine) == 0 :
         return ""
     else :
-        return chaine[-1] + reverse_recursif(chaine[:-1])
+        return chaine[-1] + reverse_recursif_slice(chaine[:-1])
 
 
 #EXERCICE 2
@@ -82,6 +82,6 @@ if __name__ == '__main__' :
     assert reverse("informatique") == "euqitamrofni"
     assert reverse_slice("informatique") == "euqitamrofni"
     assert autre_reverse("informatique") == "euqitamrofni"
-    assert reverse_recursif("informatique") == "euqitamrofni"
+    assert reverse_recursif_slice("informatique") == "euqitamrofni"
 
     assert crible(40) == [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37]
